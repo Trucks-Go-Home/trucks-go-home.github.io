@@ -1,0 +1,93 @@
+/* The game's own look: cream clay, warm brown writing, its rounded font. */
+@font-face {
+  font-family: "Nunito";
+  src: url("fonts/Nunito.ttf") format("truetype");
+  font-weight: 200 1000;
+  font-display: swap;
+}
+
+:root {
+  --cream: #f8e9cb;
+  --card: #fbf0d8;
+  --ink: #5b3a1f;
+  --heading: #a84f1c;
+  --lip: #d6b887;
+  --grass: #6f9a35;
+  --green: #6fae3d;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--grass);
+  color: var(--ink);
+  font-family: "Nunito", system-ui, sans-serif;
+  font-weight: 600;
+  line-height: 1.6;
+}
+
+main {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 24px 16px 48px;
+}
+
+.card {
+  background: var(--card);
+  border-radius: 28px;
+  box-shadow: 0 8px 0 var(--lip), 0 18px 30px rgba(40, 28, 6, 0.28);
+  padding: 28px 24px;
+  margin: 0 0 28px;
+}
+
+h1, h2 { color: var(--heading); line-height: 1.2; font-weight: 900; }
+h1 { font-size: 2rem; margin: 0 0 8px; }
+h2 { font-size: 1.25rem; margin: 28px 0 6px; }
+p { margin: 0 0 12px; }
+a { color: var(--heading); }
+
+.banner {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 28px;
+  margin: 0 0 28px;
+  box-shadow: 0 18px 30px rgba(40, 28, 6, 0.28);
+}
+
+.intro {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.intro img {
+  width: 96px;
+  height: 96px;
+  border-radius: 24px;
+  flex: none;
+}
+
+.shot {
+  display: block;
+  width: min(100%, 320px);
+  height: auto;
+  margin: 16px auto 0;
+  border-radius: 20px;
+}
+
+.note { font-size: 0.9rem; opacity: 0.8; }
+
+footer {
+  text-align: center;
+  color: #fff8e6;
+  font-size: 0.9rem;
+}
+
+footer a { color: #fff8e6; }
+
+@media (max-width: 480px) {
+  .intro { flex-direction: column; align-items: flex-start; }
+  h1 { font-size: 1.6rem; }
+}

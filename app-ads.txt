@@ -1,0 +1,2 @@
+# Authorised sellers of ads in Trucks Go Home (https://iabtechlab.com/app-ads-txt/).
+# The AdMob line is added once the AdMob account exists.
